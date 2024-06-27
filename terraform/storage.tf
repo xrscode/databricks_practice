@@ -7,6 +7,9 @@ resource "azurerm_storage_account" "data_lake" {
     location = azurerm_resource_group.data_lake.location
     account_tier = "Standard"
     account_replication_type = "LRS"
+    # Enable hierarchical namespace
+    # Allows creation of folders.
+    is_hns_enabled           = true
 } 
 
 # Create blob storage:
