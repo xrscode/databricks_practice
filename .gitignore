@@ -1,0 +1,13 @@
+# Ignore virtual environment directory
+venv/
+
+# Ignore Terraform directories and files
+terraform/.terraform
+terraform.tfstate
+terraform.tfstate.backup
+terraform/.terraform.lock.hcl
+terraform.terraform.tfstate.lock.info
+
+# Additionally ignore any .tfstate and .tfstate backup files that may be in other directories
+*.tfstate
+*.tfstate.backup
