@@ -26,7 +26,7 @@ resource "azurerm_storage_data_lake_gen2_path" "raw_directory" {
     resource = "directory"
 }
 
-# Uplade JSON to RAW directory:
+# Upload JSON to RAW directory:
 resource "azurerm_storage_blob" "json" {
     name = "RAW/dbdata.json"
     storage_account_name   = azurerm_storage_account.data_lake.name
