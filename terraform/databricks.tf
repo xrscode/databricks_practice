@@ -1,4 +1,0 @@
-provider "databricks" {
-    token = ""
-    host = ""
-}
